@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +10,9 @@
     <meta name="description" content="digital durga puja" />
     <meta name="Keywords" content="HTML, CSS, JavaScript, digital durga puja" />
     <meta name="author" content="Rahul" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Durgapuja</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar">
@@ -24,7 +22,7 @@
                 </div>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <div class="rightnav">
                 <input type="text" name="search" id="search" placeholder="search here">
@@ -32,69 +30,41 @@
             </div>
         </nav>
     </header>
-    <section class="firstsection">
-        <h1>WELCOME TO<br> DIGITAL DURGA PUJA <br>2022</h1>
-    </section>
 
-    <!-- section card -->
-    <section class="section">
+
+    <section class="section section-contact">
         <div class="container">
-            <h5>DURGA PUJA DAYS</h5><br>
-            <h2>WELCOME TO DIGITAL DURGA PUJA 2022</h2>
+            <h2 class="common-heading">Contact Us</h2>
         </div>
-        <div class="container grid grid-three-column">
-            <div class="card">
-                <img src="/img/panchami_digital_durga_puja.png" alt="image">
-                <h3>Durga Panchami </h3>
-                <h4> 30.09.2022</h4>
-                <p>The day idols of Devi Durga along with her children comes to the Pandal.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24824.74005626559!2d88.06093253102806!3d22.34533224562729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a028ec0a26fe9ad%3A0xede3ddcb3092b36!2zNTgg4KaX4KeH4KafIOCmrOCmvuCmuCDgprjgp43gpp_gpqo!5e0!3m2!1sbn!2sin!4v1652156838203!5m2!1sbn!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="section-contact-main contact-container">
+            <form action="#">
+                <div class="grid grid-two-column">
+                    <div>
+                    <label for="username"></label>
+                    <input type="text" name="username" placeholder="username" id="username" />
+                </div>  
+                <div>
+                    <label for="email"></label>
+                    <input type="email" name="email" placeholder="demo@mail.com" id="email" />
+                </div>
             </div>
 
-            <div class="card">
-                <img src="/img/shasthi_digital_durga_puja.png" alt="image">
-                <h3>Durga Shasthi </h3>
-                <h4>01.10.2022</h4>
-                <p>Involves rites to awaken and welcome the goddess to be a guest, known as Bodhon.</p>
+            <div>
+                <input type="text" name="subject" placeholder="subject" id="subject" />
             </div>
-
-            <div class="card">
-                <img src="/img/saptami_digital_durga_puja.png" alt="image">
-                <h3> Maha Saptami </h3>
-                <h4> 02.10.2022</h4>
-                <p>Bathing of the navapatrika with holy water done on the seventh day of the festival.</p>
+            <div>
+                <label for="textarea"></label>
+                <textarea name="textarea" id="teaxtarea" cols="30" rows="10" placeholder="Type your quries"></textarea>
             </div>
-
-            <div class="card">
-                <img src="/img/ashtami_digital_durga_puja.png" alt="image">
-                <h3>Maha Ashtami </h3>
-                <h4> 03.10.2022</h4>
-                <p>Sandhi Puja, involving the offering of 108 lotuses and lighting of 108 lamps.</p>
+            <div>
+                <input type="submit" name="submit" id="submit" class="btn" value="send message" />
             </div>
-
-            <div class="card">
-                <img src="/img/navami_digital_durga_puja.png" alt="image">
-                <h3>Maha Navami </h3>
-                <h4> 04.10.2022</h4>
-                <p>The ninth day of festival is marked with the Homa (Fire oblation) and Bhog.</p>
-            </div>
-
-            <div class="card">
-                <img src="/img/dashmi_digital_durga_puja.png" alt="image">
-                <h3>Vijaya Dashami </h3>
-                <h4> 05.10.2022</h4>
-                <p>The last day of this festival, called Bijoya Dashami is marked by Sindoor Khela.</p>
-            </div>
+            </form>
         </div>
     </section>
 
-
-    <!-- ====about section -->
-    <!-- <section class="setion1">
-        
-    </section> -->
     
-
-
     <footer class="section-footer section">
         <div class="container grid grid-three-column">
             <div class="f-about">
@@ -165,5 +135,4 @@
     </footer>
 
 </body>
-
 </html>

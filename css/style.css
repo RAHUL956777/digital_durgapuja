@@ -27,6 +27,15 @@ li {
   list-style: none;
 }
 
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
 
 /* navbar */
 .navbar {
@@ -213,13 +222,90 @@ li {
     width: 6rem;
   }
 
-  .grid-three-column {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
+ 
   /* ===========section abut================ */
 
+/* ==============section contact========= */
+.common-heading {
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin-bottom: 6rem;
+  text-transform: capitalize;
+  position: relative;
+  color: rgb(253, 150, 32);
+}
+.common-heading::before {
+  content: " ";
+  position: absolute;
+  top: 110%;
+  left: 0;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #8490ff;
+}
 
+.common-heading::after {
+  content: " ";
+  position: absolute;
+  top: 119.9%;
+  left: 1.5rem;
+  min-width: 20rem;
+  height: 0.3rem;
+  background-color: #8490ff;
+}
+
+.btn {
+  background: #6f7af0;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  color: #eaebf7;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+  box-shadow:  0 2rem 2rem 0 rgba(119, 132, 251, 0.3);
+}
+
+.section-contact-main {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  transition: all 0.3s linear;
+  /* background-color:  #f3f3f9; */
+}
+
+.section-contact-main .grid {
+  gap: 3.2rem;
+}
+
+
+.section-contact-main form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.section-contact-main input,
+.section-contact-main textarea {
+  padding: 1.5rem 2rem;
+  border: 0.1rem solid #c9c9c9;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-family: "work sans";
+  width: 100%;
+}
+
+.section-contact-main input[type="submit"] {
+  max-width: 30%;
+  border: none;
+}
 
   /* ========footer-section====== */
   
@@ -308,7 +394,7 @@ li {
 .f-creadits p {
   text-align: center;
   align-items: center;
-  margin-left: 11rem;
+  margin-left: 19rem;
   color: #adadad;
 }
 
