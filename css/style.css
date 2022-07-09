@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+p {
+  color: #777;
+  line-height: 1.6;
+  font-size: 1.7rem;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+
+/* navbar */
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  align-items: center;
+}
+
+.navbar::before {
+  content: "";
+  background: #291a1a;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* .navheight{
+    height: 4rem;
+} */
+
+.nav-list {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 19px 39px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-list li a:hover {
+  color: #9a9797;
+}
+
+.rightnav {
+  width: 50%;
+  text-align: right;
+  padding: 0px 50px;
+}
+
+.logo {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.logo img {
+  width: 7.5rem;
+}
+
+#search {
+  width: 35%;
+  height: 22px;
+  border-radius: 9px;
+}
+
+.searchIc {
+  color: #fff;
+  width: 20px;
+  height: 40px;
+}
+
+.box-main {
+  width: 70%;
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.heading {
+  color: rgb(234, 239, 243);
+  font-size: 50px;
+}
+
+.firstsection {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.firstsection::before {
+  content: "";
+  position: absolute;
+  background-blend-mode: darken;
+  background: url("/img/1.jpg") no-repeat center -150px / cover;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.85;
+}
+
+.firstsection h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+/*section card */
+.section{
+    transition: all 0.7s linear;
+  }
+  
+  .section p {
+    max-width: 60rem;
+    font-size: 1.2rem;
+  } 
+  
+  .section .grid {
+    margin-top: 6rem;
+    row-gap: 4rem;
+  }
+  .section .container h2{
+    font-size: 3.2rem;
+  }
+
+.card {
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+    border-radius: 5px;
+    padding: 6.4rem 3.4rem;
+    transition: all 0.2s linear;
+  }
+
+  .card:hover,
+.card:active {
+  transform: translateY(-1rem);
+}
+
+.card h3 {
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: red;
+  }
+
+  .card p{
+    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+  .card h4{
+    font-size: 2rem;
+  }
+
+  .container {
+    max-width: 140rem;
+    margin: 0 auto;
+  }
+
+  .container h2{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .container h5{
+    font-size: 1.2rem;
+    text-align: center;
+    color: red;
+  }
+
+  .grid {
+    display: grid;
+    gap: 4rem;
+  }
+
+  .grid .card img{
+    width: 6rem;
+  }
+
+  .grid-three-column {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ===========section abut================ */
+
+
+
+  /* ========footer-section====== */
+  
+  .grid {
+    display: grid;
+    gap: 4rem;
+  }
+
+  .container {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
+  .section-footer {
+    background: rgb(0, 10, 45);;
+    transition: all 0.7s linear;
+  }
+
+  .section-footer h3 {
+    color: white;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+
+  .f-about p {
+    color: #adadad;
+  }
+
+  .f-about,
+  .f-links,
+  .f-address{
+    margin-left: 3rem;
+  }
+
+  .f-links ul,
+  .f-address address,
+  .f-services ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.f-links li,
+.f-links a,
+.f-services li,
+.f-services a {
+  font-size: 1.9rem;
+  color: #adadad;
+  text-transform: capitalize;
+}
+
+.f-links span,
+.f-services span,
+.f-address span {
+  margin-right: 3rem;
+}
+
+.f-address p,
+.f-address p a {
+  font-style: normal;
+  color: #adadad;
+}
+
+.f-social-icons {
+  margin: 5rem 0;
+  text-align: center;
+  color: #adadad;
+}
+
+.f-social-icons .icons {
+  width: 4rem;
+  height: 4rem;
+  color: white;
+  display: inline-block;
+  padding: 1.4rem 1.8rem;
+  position: relative;
+  color: white;
+}
+
+.f-creadits p {
+  text-align: center;
+  align-items: center;
+  margin-left: 11rem;
+  color: #adadad;
+}
+
+footer a:hover,
+footer a:active {
+  color: white;
+}
