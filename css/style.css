@@ -15,11 +15,6 @@ h3 {
   font-weight: 400;
 }
 
-p {
-  color: #777;
-  line-height: 1.6;
-  font-size: 1.7rem;
-}
 a {
   text-decoration: none;
 }
@@ -55,12 +50,8 @@ li {
   opacity: 0.5;
 }
 
-/* .navheight{
-    height: 4rem;
-} */
-
 .nav-list {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -73,17 +64,11 @@ li {
 .nav-list li a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.4rem;
 }
 
 .nav-list li a:hover {
   color: #9a9797;
-}
-
-.rightnav {
-  width: 50%;
-  text-align: right;
-  padding: 0px 50px;
 }
 
 .logo {
@@ -98,17 +83,6 @@ li {
   width: 7.5rem;
 }
 
-#search {
-  width: 35%;
-  height: 22px;
-  border-radius: 9px;
-}
-
-.searchIc {
-  color: #fff;
-  width: 20px;
-  height: 40px;
-}
 
 .box-main {
   width: 70%;
@@ -219,45 +193,84 @@ li {
   }
 
   .grid .card img{
-    width: 6rem;
+    width: 4rem;
   }
 
  
   /* ===========section abut================ */
+  .absection{
+    max-width: 100%;
+    margin: 4rem;
+    margin-bottom: 9rem;
+  }
+  .absection .leftpara p{
+    font-size: 1.4rem;
+  }
+  .absection .leftpara{
+    max-width: 100%;
+    text-align: center;
+    padding-left: 4rem;
+    margin-left: 3rem;
+  }
 
+  .absection .leftpara h1{
+    font-size: 2.4rem;
+    padding: 0 1.5rem 2.5rem 1.5rem;
+  }
+  .absection .leftpara h5{
+    font-size: 1.2rem;
+    color: red;
+    padding: 3rem;
+  }
+
+  .absection .leftpara p{
+    font-size: 1.3rem;
+  }
+
+  .absection .rightpara{
+    max-width: 48%;
+    display: grid;
+    align-items: center;
+    margin-left: 4rem;
+    position: relative;
+  }
+
+  .absection .rightpara .rightimg {
+    max-width: 20%;
+  }
+
+  .absection .rightpara .rightimg img{
+    max-width: 15rem;
+    box-shadow: 1rem -1rem 0 0 #fff; 
+    position: absolute;
+  }
+
+  
+  .absection .rightpara .leftimg {
+    max-width: 20%;
+    position: absolute;
+    left: 10rem;
+  }
+
+  .absection .rightpara .leftimg img{
+    height: 27rem;
+    width: 22rem;
+  }
 /* ==============section contact========= */
 .common-heading {
+  margin-top: 3rem 0 0 0 ;
   font-size: 4.8rem;
   font-weight: 600;
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem; */
   text-transform: capitalize;
   position: relative;
-  color: rgb(253, 150, 32);
-}
-.common-heading::before {
-  content: " ";
-  position: absolute;
-  top: 110%;
-  left: 0;
-  border-radius: 50%;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: #8490ff;
-}
-
-.common-heading::after {
-  content: " ";
-  position: absolute;
-  top: 119.9%;
-  left: 1.5rem;
-  min-width: 20rem;
-  height: 0.3rem;
-  background-color: #8490ff;
+  color: red;
 }
 
 .btn {
   background: #6f7af0;
   padding: 1.6rem 3.2rem;
+  margin-bottom: 3rem;
   border: none;
   color: #eaebf7;
   display: inline-block;
@@ -282,14 +295,13 @@ li {
 }
 
 .section-contact-main .grid {
-  gap: 3.2rem;
+  gap: 3rem;
 }
-
 
 .section-contact-main form {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 3rem;
 }
 
 .section-contact-main input,
@@ -378,17 +390,24 @@ li {
 .f-social-icons {
   margin: 5rem 0;
   text-align: center;
-  color: #adadad;
 }
 
 .f-social-icons .icons {
-  width: 4rem;
-  height: 4rem;
-  color: white;
+  width: 3rem;
+  height: 3rem;
   display: inline-block;
   padding: 1.4rem 1.8rem;
   position: relative;
-  color: white;
+  color: #666;
+  border-radius: 60%;
+  margin-left: 1rem;
+}
+
+.f-social-icons .icons:hover{
+  color: #ffa502;
+  box-shadow: 0 0 15px #d35400;
+  text-shadow: 0 0 15px #d35400;
+  transition: .8s;
 }
 
 .f-creadits p {
@@ -401,4 +420,56 @@ li {
 footer a:hover,
 footer a:active {
   color: white;
+}
+
+/* ==========scroll to  top========= */
+.scroll-top {
+  position: fixed;
+  bottom: 7.5rem;
+  right: 1.5rem;
+  z-index: 1000;
+}
+
+.scroll-top img {
+  width: 8rem;
+  animation: float 3s linear infinite;
+}
+
+@keyframes float {
+  100%,
+  0% {
+    transform: translateY(0rem);
+  }
+
+  50% {
+    transform: translateY(-3rem);
+  }
+}
+
+/* ============belief us page=========== */
+.beliefs h1{
+  font-size: 3rem;
+  text-align: center;
+  margin: 5rem 0 1rem 0;
+}
+
+.beliefs h5{
+  font-size: 1.9rem;
+  text-align: center;
+  color: rgb(233, 3, 3);
+  margin-bottom: 4rem;
+}
+
+.belief{
+  max-width: 100%;
+  margin: 2rem 2rem 5rem 2rem;
+}
+
+.belief .bel-main .rightbel{
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.belief .bel-main .rightbel p{
+  max-width: 100%;
 }
