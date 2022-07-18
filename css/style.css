@@ -155,6 +155,7 @@ li {
   transform: translateY(-1rem);
 }
 
+
 .card h3 {
     text-transform: capitalize;
     margin-top: 1rem;
@@ -196,12 +197,10 @@ li {
     width: 4rem;
   }
 
- 
   /* ===========section abut================ */
   .absection{
     max-width: 100%;
-    margin: 4rem;
-    margin-bottom: 9rem;
+    margin: 6rem 2rem 9rem 2rem;
   }
   .absection .leftpara p{
     font-size: 1.4rem;
@@ -214,7 +213,7 @@ li {
   }
 
   .absection .leftpara h1{
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     padding: 0 1.5rem 2.5rem 1.5rem;
   }
   .absection .leftpara h5{
@@ -256,6 +255,51 @@ li {
     height: 27rem;
     width: 22rem;
   }
+
+  /* ===========second section abut=============
+  === */
+  .absections{
+    max-width: 100%;
+    margin-top: 9rem;
+    margin-bottom: 7rem;
+    background-color: #020b29;
+  }
+  .absections .leftparas p{
+    font-size: 1.4rem;
+    color: white;
+  }
+  .absections .leftparas h5{
+    font-size: 1.2rem;
+    color: red;
+    padding: 3rem;
+  }
+  .absections .leftparas h1{
+    font-size: 3.2rem;
+    color: white;
+    padding: 0 1.5rem 2.5rem 1.5rem;
+  }
+  .absections .leftparas{
+    max-width: 100%;
+    text-align: center;
+    padding-left: 4rem;
+    margin-left: 3rem;
+  }
+  
+  .absections .rightparas{
+    display: grid;
+    position: relative;
+  }
+  
+  .absections .rightparas .leftimge img{
+    width: 30rem;
+    height: 35rem;
+    box-shadow: -1rem 1rem 0 0 white;
+  }
+
+  .absections .rightparas .rightimge img{
+    width: 24rem;
+  }
+  
 /* ==============section contact========= */
 .common-heading {
   margin-top: 3rem 0 0 0 ;
@@ -407,7 +451,7 @@ li {
   color: #ffa502;
   box-shadow: 0 0 15px #d35400;
   text-shadow: 0 0 15px #d35400;
-  transition: .8s;
+  transition: .8s all ;
 }
 
 .f-creadits p {
@@ -448,7 +492,7 @@ footer a:active {
 
 /* ============belief us page=========== */
 .beliefs h1{
-  font-size: 3rem;
+  font-size: 3.2rem;
   text-align: center;
   margin: 5rem 0 1rem 0;
 }
