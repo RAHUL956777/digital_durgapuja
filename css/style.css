@@ -141,6 +141,7 @@ li {
   .section .container h2{
     font-size: 3.2rem;
   }
+  
 
 .card {
     text-align: center;
@@ -197,10 +198,12 @@ li {
     width: 4rem;
   }
 
+
+
   /* ===========section abut================ */
   .absection{
     max-width: 100%;
-    margin: 6rem 2rem 9rem 2rem;
+    margin: 3rem 2rem 25rem 2rem;
   }
   .absection .leftpara p{
     font-size: 1.4rem;
@@ -256,6 +259,66 @@ li {
     width: 22rem;
   }
 
+    /* ======section timmer====== */
+  
+    .timmer h4{
+      text-align: center;
+      font-size: 1.6rem;
+      color: #e15b39;
+      text-transform: uppercase;
+    }
+    .timmer .countdown{
+      width: 80vw;
+      border: 1px solid white;
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      margin-top: 10rem;
+  }
+  
+  .timmer .box{
+      border: 1px solid orange;
+      width: 28vmin;
+      height: 28vmin;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      position: relative;
+      box-shadow: 15px 15px 30px rgba( 0, 0, 0, 0.5);
+      font-size: 16px;
+  }
+  .timmer .box::after{
+      content: "";
+      position: absolute;
+      background-color: rgba(255,255,255,0.12);
+      height: 100%;
+      width: 50%;
+      left: 0;
+  }
+  .timmer span.num{
+      background-color: #202020;
+      color: white;
+      display: grid;
+      height: 100%;
+      width: 100%;
+      place-items: center;
+      font-weight: 600;
+      font-size: 5em;
+  }
+  .timmer span.text{
+      font-size: 1.2em;
+      background-color: #2887e3;
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 0.5em 0;
+      font-weight: 400;
+  } 
+
   /* ===========second section abut=============
   === */
   .absections{
@@ -293,11 +356,12 @@ li {
   .absections .rightparas .leftimge img{
     width: 30rem;
     height: 35rem;
-    box-shadow: -1rem 1rem 0 0 white;
+    box-shadow: -2rem 1rem 0 0 white;
   }
 
   .absections .rightparas .rightimge img{
     width: 24rem;
+    box-shadow: -1rem -1rem 0 0 rgb(255, 254, 253);
   }
   
 /* ==============section contact========= */
@@ -308,7 +372,7 @@ li {
   /* margin-bottom: 6rem; */
   text-transform: capitalize;
   position: relative;
-  color: red;
+  color: rgb(224, 39, 2);
 }
 
 .btn {
