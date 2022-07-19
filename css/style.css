@@ -490,6 +490,48 @@ footer a:active {
   }
 }
 
+/* =============about this page============== */
+.secondab h1{
+  font-size: 3.2rem;
+  text-align: center;
+  color: #01081f;
+}
+
+.secondab h3{
+  text-align: center;
+  margin: 2rem;
+  color: #f93504;
+}
+
+.secondab p{
+  text-align: center;
+  max-width: 100%;
+  margin: 2rem 4rem 2rem 4rem;
+  font-size: 1.2rem;
+  color: #f93504;
+  
+  
+}
+
+.secondab h4{
+  text-align: center;
+  font-size: 1.1rem;
+  color: #04011f;
+}
+.absection .leftmantras h4{
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+  color: #c22802;
+}
+
+.absection .rightmantras h4{
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+  color: rgb(205, 38, 4);
+}
+
 /* ============belief us page=========== */
 .beliefs h1{
   font-size: 3.2rem;

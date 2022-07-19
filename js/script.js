@@ -46,7 +46,7 @@
 // let  i = setInterval(countdown,1000);
 // countdown();
 
-
+console.log("Welcome");
 
 // for scroll to top
 
