@@ -60,3 +60,11 @@ const scrollTop = ()=>{
 };
 
 scrollElement.addEventListener("click", scrollTop);
+
+
+// loader
+var preLoader = document.getElementById('loding');
+
+window.addEventListener("load", function(){
+    preLoader.style.display= "none";
+})
