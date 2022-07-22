@@ -5,7 +5,8 @@ let hrBox = document.getElementById("hr-box");
 let minBox = document.getElementById("min-box");
 let secBox = document.getElementById("sec-box");
 
-let endDate = new Date(2022, 9, 30, 6, 30 );
+// year, day, hour, second
+let endDate = new Date(2022, 9, 6, 12,);
 let endTime = endDate.getTime();
 
 
@@ -30,7 +31,6 @@ function countdown(){
     }else{
         let daysLeft = Math.floor(reminingTime / oneDay);
         
-
         let hrsLeft = Math.floor((reminingTime % oneDay) / oneHr);
 
         let minsLeft = Math.floor((reminingTime % oneHr) / oneMin);

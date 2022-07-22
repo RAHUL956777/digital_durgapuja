@@ -13,14 +13,39 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="preLoader()">
+    
+    <div id="loding">
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+        </div>
+    </div>
     <header>
         <nav class="navbar">
             <ul class="nav-list">
                 <div class="logo">
                     <img src="/img/logo.png" alt=logo">
                 </div>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="/html/about.html">About</a></li>
                 <li><a href="/html/contact.html">Contact</a></li>
                 <li><a href="/html/belief.html">Our Belief</a></li>
@@ -114,7 +139,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="f-social-icons">
+            <div class="f-social-icons"data-aos="flip-right"data-aos-duration="2000">
                 <a href="https://rahulbiodata.netlify.app" target="_blank">
                     <ion-icon name="logo-web-component" class="icons"></ion-icon>
                 </a>
@@ -132,4 +157,11 @@
     </footer>
 
 </body>
+<script>
+    var preLoader = document.getElementById('loding');
+
+window.addEventListener("load", function(){
+    preLoader.style.display= "none";
+})
+</script>
 </html>

@@ -5,24 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://kit.fontawesome.com/bee3af84fb.js" crossorigin="anonymous"></script>
     <meta name="description" content="digital durga puja" />
     <meta name="Keywords" content="HTML, CSS, JavaScript, digital durga puja" />
     <meta name="author" content="Rahul" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/bee3af84fb.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 
-<body>
+<body onload="preLoader()">
+    
+    <div id="loding">
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+        </div>
+    </div>
     <header>
         <nav class="navbar">
             <ul class="nav-list">
                 <div class="logo">
                     <img src="/img/logo.png" alt=logo">
                 </div>
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="/html/about.html">About</a></li>
                 <li><a href="/html/contact.html">Contact</a></li>
                 <li><a href="/html/belief.html">Our Belief</a></li>
@@ -40,8 +68,8 @@
                 <h4>(EXCERPTS FROM: DEVI-MAHATMYA,ADHYAAYA 5)</h4>
         </div>
 
-        <section class="absection grid grid-two-column">
-            <div class="leftmantras">
+        <section class="absectionp grid grid-two-column">
+            <div class="leftmantras" data-aos="zoom-in-up"data-aos-duration="2000">
                 <h4> Ya Devi Sarvabhuteshu lajjarupena sansthita |<br>
                     namastasyai namastasyai namastasyai namo namaha ||</h4>
 
@@ -78,7 +106,7 @@
                 <!-- end -->
 
 
-                <div class="rightmantras">
+                <div class="rightmantras" data-aos="zoom-out"data-aos-duration="2000">
                 <h4>Ya Devi Sarvabhuteshu vishhnumayeti shabdita |<br>
                     namastasyai namastasyai namastasyai namo namahaa ||</h4>
 
@@ -183,7 +211,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="f-social-icons">
+                <div class="f-social-icons"data-aos="flip-right"data-aos-duration="2000">
                     <a href="https://rahulbiodata.netlify.app" target="_blank">
                         <ion-icon name="logo-web-component" class="icons"></ion-icon>
                     </a>
@@ -202,5 +230,14 @@
             </div>
         </footer>
 </body>
+<script >var preLoader = document.getElementById('loding');
+
+    window.addEventListener("load", function(){
+        preLoader.style.display= "none";
+    })</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

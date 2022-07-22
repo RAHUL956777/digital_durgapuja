@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 
 #loding{
   display: flex;
@@ -412,12 +415,12 @@ li {
   .absections .rightparas .leftimge img{
     width: 30rem;
     height: 35rem;
-    box-shadow: -2rem 1rem 0 0 white;
+    /* box-shadow: -2rem 1rem 0 0 white; */
   }
 
   .absections .rightparas .rightimge img{
     width: 24rem;
-    box-shadow: -1rem -1rem 0 0 rgb(255, 254, 253);
+    /* box-shadow: -1rem -1rem 0 0 rgb(255, 254, 253); */
   }
   
 /* ==============section contact========= */
@@ -629,8 +632,6 @@ footer a:active {
   margin: 2rem 4rem 2rem 4rem;
   font-size: 1.2rem;
   color: #f93504;
-  
-  
 }
 
 .secondab h4{
@@ -638,17 +639,18 @@ footer a:active {
   font-size: 1.1rem;
   color: #04011f;
 }
-.absection .leftmantras h4{
-  font-size: 1.4rem;
+/* =====mantras====== */
+.absectionp .leftmantras h4{
+  font-size: 1.5rem;
   font-weight: 300;
-  padding-bottom: 1rem;
+  margin: 2rem 2rem 1rem 2rem;
   color: #c22802;
 }
 
-.absection .rightmantras h4{
+.absectionp .rightmantras h4{
   font-size: 1.5rem;
   font-weight: 300;
-  padding-bottom: 1rem;
+  margin: 2rem 2rem 1rem 2rem;
   color: rgb(205, 38, 4);
 }
 
