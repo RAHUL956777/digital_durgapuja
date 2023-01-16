@@ -5,7 +5,7 @@ let minBox = document.getElementById("min-box");
 let secBox = document.getElementById("sec-box");
 
 // year, day, hour, second
-let endDate = new Date(2022, 9, 6, 12,);
+let endDate = new Date(2023, 9, 6, 12,);
 let endTime = endDate.getTime();
 
 
