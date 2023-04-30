@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: digital-durgapuja-2022.netlify.app
+Token: 7598cdbb771e732910f529f76fbcb81590e970654e5381c08c281593bc556269
