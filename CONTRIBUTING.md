@@ -1,5 +1,3 @@
-# digital_durgapuja
-it's a static website releated to out culcture durgapuja...fro it we know taht what durga pujs is and brief knowledge of rituals
 # How can I contribute in `Digital Durgapuja`?
 1) first `star` our repo. ![image](https://github.com/Git21221/IBMSkillsBuild/assets/101005577/74657b1d-b3c5-45fd-861c-344144259881)
 2) `fork` our repo by clicking fork button. ![image](https://github.com/Git21221/digital_durgapuja-hacktoberfest-/assets/101005577/9a4464c2-14b1-4205-b63c-382e0947cbf1)
